@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Ecom Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="vedant.testcomponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="StandAloneTests(failed)">
+    <classes>
+      <class name="vedant.test.Testing">
+        <methods>
+          <include name="productsDeletion"/>
+          <include name="tearDown"/>
+          <include name="standAloneTest" invocation-numbers="0"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- vedant.test.Testing -->
+    </classes>
+  </test> <!-- StandAloneTests(failed) -->
+</suite> <!-- Failed suite [Ecom Suite] -->
